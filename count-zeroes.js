@@ -11,7 +11,7 @@ function countZeroes(arr) {
 function findFirst(arr, low = 0, high = arr.length - 1) {
     
     if(high >= low) {
-        mid = Math.floor((high - low) / 2);
+        mid = low + Math.floor((high - low) / 2);
 
         if((mid == 0 || arr[mid - 1] == 1) && arr[mid] == 0) {
             return mid;
